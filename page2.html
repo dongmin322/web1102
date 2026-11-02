@@ -1,7 +1,16 @@
 <!Doctype html>
 <meta charset = 'UTF-8'>
 <html>
-  <head><title>리스트에서 자료선택하기</title></head>
+  <head><title>리스트에서 자료선택하기</title>
+  <script>
+    function drawImage()
+    {
+      let sel = document.getElemnetById('fruits'); // fix Id
+      let img = document.getElementById('fimg');   // change Id
+      img.src = set.option[sel.selctedIndex].value; // 선택한 리스트에 따른 변경
+    }
+  </script>
+  </head>
   <body>
     주제1. 내가 좋아하는 과일 선택<br>
     <form>
