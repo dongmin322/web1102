@@ -7,8 +7,11 @@
     {
       let sel = document.getElementById('fruits'); // fix Id
       let img = document.getElementById('fimg');
-      let img = document.getElementById('lunch');// change Id
       img.src = sel.options[sel.selectedIndex].value; // 선택한 리스트에 따른 변경
+
+      let sel = document.getElementById('lunch-menu');// change Id
+      let img = document.getElementById('lunch');// change Id
+      img.src = sel.options[sel.selectedIndex].value;
     }
   </script>
   </head>
@@ -25,7 +28,7 @@
     
     주제2. 오늘 점심 메뉴 선택 <br>
       <form>
-        <select id='fruits'onchange='drawImage()'>
+        <select id='lunch-menu'onchange='drawImage()'>
           <option value='chicken.jpg'>닭</option>
           <option value='steak.jpg'>돼지고기</option>
           <option value='salmon.jpg'>연어</option>
